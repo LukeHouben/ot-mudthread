@@ -21,3 +21,8 @@ This folder contains again two subfolders:
 
 - `cli` is a demo program used to create a command-line interface on a Nordic nRF5340DK System-On-Chip (SOC).
 - `src` contains the modified OpenThread Repo taken from the Nordic Connect SDK.
+
+## Demo setup
+
+The following image shows an overview of all components of MUDThread in action.
+![Demo Setup](.img/MUDThread_Setup.png)
