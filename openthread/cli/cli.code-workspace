@@ -1,0 +1,41 @@
+{
+	"folders": [
+		{
+			"name": "cli",
+			"path": "."
+		},
+		{
+			"name": "coprocessor",
+			"path": "../coprocessor"
+		}
+	],
+	"settings": {
+		"nrf-connect.toolchain.path": "${nrf-connect.toolchain:2.3.0}",
+		"files.associations": {
+			"tls_credentials.h": "c",
+			"net_ip.h": "c",
+			"openthread.h": "c",
+			"socket.h": "c",
+			"client.h": "c",
+			"experiment.h": "c",
+			"igmp.h": "c",
+			"ping_sender.h": "c",
+			"log.h": "c"
+		},
+		"nrf-connect.debugging.bindings": {
+			"${workspaceFolder}/build": "Launch cli\\build"
+		}
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"type": "nrf-connect",
+				"request": "launch",
+				"name": "Launch cli\\build",
+				"config": "${workspaceFolder}/build",
+				"runToEntryPoint": "main"
+			}
+		]
+	}
+}
